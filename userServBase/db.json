@@ -1,0 +1,231 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    },
+    "users": [
+        {
+            "id": 1,
+            "imagen": "https://i.pinimg.com/564x/95/d8/39/95d839d52376bc9c6f9cf34e9d160d56.jpg",
+            "name": "Sofia",
+            "email": "sofia@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 2,
+            "imagen": "https://i.pinimg.com/736x/ed/c2/e6/edc2e6e3793fd8df75c35a2e2fa84d47.jpg",
+            "name": "Alexander",
+            "email": "alexander@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 3,
+            "imagen": "https://i.pinimg.com/564x/b0/24/d8/b024d8fb189d362ad7ea1fb27055b073.jpg",
+            "name": "Emiliano",
+            "email": "emiliano@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 4,
+            "imagen": "https://i.pinimg.com/564x/0a/dd/72/0add7232b586a5ed1a0cc293684f7414.jpg",
+            "name": "Victoria",
+            "email": "victoria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 5,
+            "imagen": "https://i.pinimg.com/564x/64/af/0d/64af0dbb6fd2218bd145d4b8c47fa529.jpg",
+            "name": "Regina",
+            "email": "regina@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 6,
+            "imagen": "https://i.pinimg.com/564x/7c/e4/da/7ce4da76cb56694091613a297431595c.jpg",
+            "name": "Santiago",
+            "email": "santiago@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 7,
+            "imagen": "https://i.pinimg.com/564x/f0/03/91/f00391f982c1c7df59ba8bed731d1a8f.jpg",
+            "name": "Mateo",
+            "email": "mateo@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 8,
+            "imagen": "https://i.pinimg.com/564x/a5/30/bc/a530bc62982f18f4c841e5c0731742f1.jpg",
+            "name": "Leonardo",
+            "email": "leonardo@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 9,
+            "imagen": "https://i.pinimg.com/564x/b1/f5/6c/b1f56c111430b7d208ec1c8789762578.jpg",
+            "name": "Miguel Ángel",
+            "email": "miguelangel@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 10,
+            "imagen": "https://i.pinimg.com/564x/dc/51/61/dc5161dd5e36744d184e0b98e97d31ba.jpg",
+            "name": "Daniel",
+            "email": "daniel@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 11,
+            "imagen": "https://i.pinimg.com/564x/86/16/1d/86161d9e7af992724d49ada57b80abbb.jpg",
+            "name": "María Jóse",
+            "email": "@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 12,
+            "imagen": "https://i.pinimg.com/564x/57/9b/18/579b1824fa469e13ecd891769e9f3eaf.jpg",
+            "name": "Camila",
+            "email": "camila@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 13,
+            "imagen": "https://i.pinimg.com/564x/72/86/00/7286004749d76a7e96475a7f468c0de2.jpg",
+            "name": "Matias",
+            "email": "matias@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 14,
+            "imagen": "https://i.pinimg.com/564x/95/d8/39/95d839d52376bc9c6f9cf34e9d160d56.jpg",
+            "name": "Ximena",
+            "email": "ximena@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 15,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 16,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 17,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 18,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 19,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 20,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 21,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 22,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 23,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 24,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 25,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 26,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 27,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 28,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 29,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        },
+        {
+            "id": 30,
+            "imagen": "https://i.pinimg.com/564x/24/f2/25/24f22516ec47facdc2dc114f8c3de7db.jpg",
+            "name": "María",
+            "email": "maria@gmail.com",
+            "role": "customer"
+        }
+    ]
+}
