@@ -1,6 +1,6 @@
 <template>
   <div class="product--card">
-    <img src="" :data-img="imagen" alt="" />
+    <img id="img" src="" :data-img="imagen" alt="" />
     <div class="product-info">
       <div>
         <p>{{ name }}</p>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, defineEmits, onMounted } from 'vue';
 
 const contain = defineProps({
     id: {
@@ -31,6 +31,18 @@ const contain = defineProps({
         type: String,
     }
 });
+
+const emit = defineEmits(["imgCart"]);
+
+const imgCart = () => {
+  const imageContainer = document.querySelector("#img");
+  emit('imgCart',imageContainer);
+};
+
+onMounted(() => {
+imgCart()
+});
+
 </script>
 
 

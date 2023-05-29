@@ -1,7 +1,7 @@
 <template>
   <section class="main--container">
     <div class="cards--container">
-      <CartUser
+      <CartUser @img-cart="eventLoading"
         v-for="{ id, imagen, name, email, role } in newVarResult.result"
         :key="`${id}`"
         :id="`${id}`"
@@ -22,12 +22,25 @@ import { ref, onMounted, reactive } from "vue";
 const { result, makeRequest, cabecera } = useAsync();
 const page = ref("1");
 const resultData = ref(null);
-const limit = ref("6");
+const limit = ref("10");
 const stringLimit = ref(5);
 
 const newVarResult = reactive({
   result: [],
 });
+
+const lazyLoader = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log('entry', entry);
+      const url = entry.target.getAttribute("data-img");
+      entry.target.setAttribute("src", url);
+    }
+  });
+});
+const eventLoading = (param) => {
+  lazyLoader.observe(param)
+}
 
 const userName = async () => {
   await makeRequest("users", {
@@ -40,9 +53,6 @@ const userName = async () => {
 
   const divition = numberStrin / stringLimit.value;
   resultData.value = Math.ceil(divition);
-  console.log('divition', divition);
-  console.log('numberStrin', numberStrin);
-  console.log('stringLimit', stringLimit.value);
 
   newVarResult.result = [...result.value, ...newVarResult.result];
 
@@ -62,7 +72,6 @@ function getPaginatedUser() {
     const pageIsNotMax = Number(page.value) < resultData.value;
 
     if (scrollIsBottom && pageIsNotMax) {
-      console.log("enter");
       document.body.scrollTop = scrollHeight / 2;
       document.documentElement.scrollTop = scrollHeight / 2;
       let newNumberPage = Number(page.value);
