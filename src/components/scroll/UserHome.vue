@@ -1,7 +1,7 @@
 <template>
   <section class="main--container">
     <div class="cards--container">
-      <CartUser @img-cart="eventLoading"
+      <CartUser
         v-for="{ id, imagen, name, email, role } in newVarResult.result"
         :key="`${id}`"
         :id="`${id}`"
@@ -28,19 +28,6 @@ const stringLimit = ref(5);
 const newVarResult = reactive({
   result: [],
 });
-
-const lazyLoader = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      console.log('entry', entry);
-      const url = entry.target.getAttribute("data-img");
-      entry.target.setAttribute("src", url);
-    }
-  });
-});
-const eventLoading = (param) => {
-  lazyLoader.observe(param)
-}
 
 const userName = async () => {
   await makeRequest("users", {
